@@ -1,2 +1,4 @@
 model_dir
-**/__pycache__/
+**/__pycache__/model_dir/
+logs/
+openvla-mini/transfer_images/

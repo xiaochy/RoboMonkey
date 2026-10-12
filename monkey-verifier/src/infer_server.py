@@ -291,4 +291,4 @@ if __name__ == "__main__":
     os.environ.setdefault("MODEL_DIR", os.path.join(os.path.dirname(__file__), "..", "..", "model_dir"))
     os.environ.setdefault("GPUS_PER_NODE", "1")
     
-    uvicorn.run(app, host="0.0.0.0", port=3100)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("VERIFIER_PORT", 3100)))
